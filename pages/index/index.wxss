@@ -1,21 +1,63 @@
 /**index.wxss**/
-.userinfo {
+.p-index__banner {
+  height: 180rpx;
+  background: #f63;
+  width: 100%;
+}
+
+.p-index__search{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #ff804d;
+  margin: 20rpx 30rpx;
+  height: 80rpx;
+  padding: 10rpx 10rpx 10rpx 40rpx;
+  color: #fff;
+}
+
+.p-index__search-input {
+  margin: auto 0rpx;
+}
+
+.p-index__search-input:focus { 
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.p-index__search-placeholder {
+  color: #f3f3f3;
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+.p-index__search-icon-box {
+  width: 100rpx;
+  height: 100%;
+  margin: auto 0rpx;
+  font-size: 30px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.p-index__search-icon {
+  max-width: 50%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.p-index__type-scroller {
+  background: #fff;
+  white-space: nowrap;
+  box-shadow: 0 2px 3px rgba(0,0,0,.25);
+  overflow-x: scroll;
 }
 
-.usermotto {
-  margin-top: 200px;
+.p-index__type-scroller-item {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 100rpx;
+  height: 70rpx;
+  font-size: 0.9rem;
+  padding: 10rpx;
+  align-items: center;
 }

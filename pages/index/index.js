@@ -1,15 +1,18 @@
-//index.js
-//获取应用实例
 const app = getApp()
 
 Page({
   data: {
+    search:{
+
+    },
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
+  onSearch: ({detail: {value}}) => {
+    console.log(value)
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

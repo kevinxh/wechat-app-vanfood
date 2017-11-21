@@ -1,13 +1,31 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="p-index__banner">
+    <view class="p-index__search">
+      <input
+        type="text"
+        class="p-index__search-input"
+        placeholder-class="p-index__search-placeholder"
+        placeholder="搜索美食"
+        confirm-type="search"
+        bindconfirm="onSearch"
+      />
+      <view class="p-index__search-icon-box">
+        <view class="p-index__search-icon">
+          <view class="fa icon-right-small" />
+        </view>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <scroll-view class="p-index__type-scroller" scroll-x="true">
+    <view class="p-index__type-scroller-item">中餐</view>
+    <view class="p-index__type-scroller-item">西餐</view>
+    <view class="p-index__type-scroller-item">寿司</view>
+    <view class="p-index__type-scroller-item">火锅</view>
+    <view class="p-index__type-scroller-item">烤肉</view>
+    <view class="p-index__type-scroller-item">香锅</view>
+    <view class="p-index__type-scroller-item">韩餐</view>
+    <view class="p-index__type-scroller-item">私厨</view>
+    <view class="p-index__type-scroller-item">快餐</view>
+  </scroll-view>
 </view>
