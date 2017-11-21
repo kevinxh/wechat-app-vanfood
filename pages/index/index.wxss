@@ -10,7 +10,7 @@
   justify-content: space-between;
   flex-direction: row;
   background-color: #ff804d;
-  margin: 20rpx 30rpx;
+  margin: 20rpx 50rpx;
   height: 80rpx;
   padding: 10rpx 10rpx 10rpx 40rpx;
   color: #fff;
@@ -18,17 +18,12 @@
 
 .p-index__search-input {
   margin: auto 0rpx;
-}
-
-.p-index__search-input:focus { 
-    border:1px solid red;
-    box-shadow: 0 0 10px #719ECE;
+  font-size: 1.1rem;
 }
 
 .p-index__search-placeholder {
   color: #f3f3f3;
   opacity: 0.9;
-  font-size: 0.8rem;
 }
 
 .p-index__search-icon-box {
@@ -57,7 +52,7 @@
   justify-content: center;
   min-width: 100rpx;
   height: 70rpx;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding: 10rpx;
   align-items: center;
 }
