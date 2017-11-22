@@ -1,6 +1,10 @@
 /**app.wxss**/
 @import "./assets/icons.wxss";
 
+page {
+  background-color: #f5f5f5;
+}
+
 .container {
   height: 100%;
   display: flex;

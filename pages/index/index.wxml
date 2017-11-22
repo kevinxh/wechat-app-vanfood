@@ -28,4 +28,79 @@
     <view class="p-index__type-scroller-item">私厨</view>
     <view class="p-index__type-scroller-item">快餐</view>
   </scroll-view>
+  
+  <view class="p-index__restaurant-list">
+    <view class="p-index__restaurant-list-title">吃货最爱</view>
+    <view class="p-index__restaurant-list-item">
+      <view class="p-index__restaurant-list-item-logo">
+        <image style="width: 150rpx; height: 150rpx; background-color: #f63;" mode="aspectFill" src="../../assets/images/mcdonald.jpg"></image>
+      </view>
+      <view class="p-index__restaurant-list-item-content">
+        <view class="p-index__restaurant-list-item-title">
+          麦当劳
+        </view>
+        <view class="p-index__restaurant-list-item-stars">
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star-half-alt"></view>
+        </view>
+        <view class="p-index__restaurant-list-item-info">
+          <view class="p-index__restaurant-list-item-info-start">
+            <text class="p-index__restaurant-list-item-attr">快餐</text>
+            <text class="p-index__restaurant-list-item-sub-attr">人均 $10</text>
+          </view>
+          <view class="p-index__restaurant-list-item-info-end">
+            <text class="p-index__restaurant-list-item-attr">2.8km</text>
+            <text class="p-index__restaurant-list-item-sub-attr">12min</text>
+          </view>
+        </view>
+        <view class="p-index__restaurant-list-item-info">
+          <view class="p-index__restaurant-list-item-info-start">
+            <text class="p-index__restaurant-list-item-attr">Burnaby</text>
+            </view>
+          <view class="p-index__restaurant-list-item-info-end">
+            <text class="p-index__restaurant-list-item-attr">11am - 10pm</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="p-index__restaurant-list-item">
+      <view class="p-index__restaurant-list-item-logo">
+        <image style="width: 150rpx; height: 150rpx; background-color: #f63;" mode="aspectFill" src="../../assets/images/mcdonald.jpg"></image>
+      </view>
+      <view class="p-index__restaurant-list-item-content">
+        <view class="p-index__restaurant-list-item-title">
+          麦当劳
+        </view>
+        <view class="p-index__restaurant-list-item-stars">
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star"></view>
+          <view class="fa icon-star-half-alt"></view>
+        </view>
+        <view class="p-index__restaurant-list-item-info">
+          <view class="p-index__restaurant-list-item-info-start">
+            <text class="p-index__restaurant-list-item-attr">快餐</text>
+            <text class="p-index__restaurant-list-item-sub-attr">人均 $10</text>
+          </view>
+          <view class="p-index__restaurant-list-item-info-end">
+            <text class="p-index__restaurant-list-item-attr">2.8km</text>
+            <text class="p-index__restaurant-list-item-sub-attr">12min</text>
+          </view>
+        </view>
+        <view class="p-index__restaurant-list-item-info">
+          <view class="p-index__restaurant-list-item-info-start">
+            <text class="p-index__restaurant-list-item-attr">Burnaby</text>
+            </view>
+          <view class="p-index__restaurant-list-item-info-end">
+            <text class="p-index__restaurant-list-item-attr">11am - 10pm</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
 </view>

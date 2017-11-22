@@ -43,8 +43,9 @@
 .p-index__type-scroller {
   background: #fff;
   white-space: nowrap;
-  box-shadow: 0 2px 3px rgba(0,0,0,.25);
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
   overflow-x: scroll;
+  margin-bottom: 30rpx;
 }
 
 .p-index__type-scroller-item {
@@ -55,4 +56,75 @@
   font-size: 1.1rem;
   padding: 10rpx;
   align-items: center;
+}
+
+.p-index__restaurant-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.40rem;
+  font-weight: bold;
+}
+
+.p-index__restaurant-list-title::before, .p-index__restaurant-list-title::after {
+  content: '';
+  background-color: #999;
+  width: 45rpx;
+  height: 4rpx;
+  display: block;
+}
+
+.p-index__restaurant-list-title::before {
+  margin-right: 15rpx;
+}
+
+.p-index__restaurant-list-title::after {
+  margin-left: 15rpx;
+}
+
+.p-index__restaurant-list {
+  padding-top: 50rpx;
+  height: 2000rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.p-index__restaurant-list-item {
+  padding: 30rpx;
+  margin: 20rpx 0rpx;
+  display: flex;
+}
+
+.p-index__restaurant-list-item-logo {
+  margin-top: 10rpx;
+}
+
+.p-index__restaurant-list-item-content {
+  padding-left: 30rpx;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.p-index__restaurant-list-item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 5rpx;
+}
+
+.p-index__restaurant-list-item-info {
+  color: rgba(0,0,0,.70);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.p-index__restaurant-list-item-sub-attr::before {
+  content: ' | ';
+  color: rgba(0,0,0,.50);
+}
+
+.p-index__restaurant-list-item-stars {
+  color: #f63;
+  font-size: 0.8rem;
 }

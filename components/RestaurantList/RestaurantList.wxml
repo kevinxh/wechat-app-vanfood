@@ -1,0 +1,4 @@
+<!--RestaurantList.wxml-->
+<template name="RestaurantList">
+  <view class="c-restaurant-list__wrapper">RestaurantList.wxml</view>
+</template>
