@@ -24,7 +24,7 @@ git clone https://github.com/kevinxh/wechat-app-vanfood.git
 
 then use the WeChat development tool to open the project!
 
-## 🤔 Where can I start to use this awesome app?
+## 🤔 When and how can I start using this awesome app?
 
 Once the day arrives for the v1.0 release, you will be able to find it by searching `吃遍温哥华` in your WeChat.
 
