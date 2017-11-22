@@ -2,9 +2,27 @@ const app = getApp()
 
 Page({
   data: {
-    search:{
-
-    },
+    favourite:[{
+      name: "麦当劳",
+      rating: 4,
+      cuisine: "快餐",
+      avgPrice: 10,
+      distance: 2.8,
+      traffic: 12,
+      area: "Burnaby",
+      startHour: "11",
+      closeHour: "10"
+    }, {
+      name: "麦当劳",
+      rating: 3,
+      cuisine: "快餐",
+      avgPrice: 10,
+      distance: 2.8,
+      traffic: 12,
+      area: "Burnaby",
+      startHour: "11",
+      closeHour: "10"
+    }],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
