@@ -31,76 +31,42 @@
   
   <view class="p-index__restaurant-list">
     <view class="p-index__restaurant-list-title">吃货最爱</view>
-    <view class="p-index__restaurant-list-item">
+
+
+    <view  wx:for="{{favourite}}" wx:key="{{idx}}" wx:for-index="idx" wx:for-item="restaurant" class="p-index__restaurant-list-item">
       <view class="p-index__restaurant-list-item-logo">
-        <image style="width: 150rpx; height: 150rpx; background-color: #f63;" mode="aspectFill" src="../../assets/images/mcdonald.jpg"></image>
+        <image style="width: 150rpx; height: 150rpx; background-color: #f63;" mode="aspectFill" src="{{restaurant.img}}"></image>
       </view>
       <view class="p-index__restaurant-list-item-content">
         <view class="p-index__restaurant-list-item-title">
-          麦当劳
+          {{restaurant.name}}
         </view>
         <view class="p-index__restaurant-list-item-stars">
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star-half-alt"></view>
+          <view wx:for="{{restaurant.rating}}" wx:key="{{index}}" class="fa icon-star"></view>
+          <view wx:if="{{restaurant.rating>Math.floor(restaurant.rating)}}" class="fa icon-star-half-alt"></view>
         </view>
         <view class="p-index__restaurant-list-item-info">
           <view class="p-index__restaurant-list-item-info-start">
-            <text class="p-index__restaurant-list-item-attr">快餐</text>
-            <text class="p-index__restaurant-list-item-sub-attr">人均 $10</text>
+            <text class="p-index__restaurant-list-item-attr">{{restaurant.cuisine}}</text>
+            <text class="p-index__restaurant-list-item-sub-attr">人均 ${{restaurant.avgPrice}}</text>
           </view>
           <view class="p-index__restaurant-list-item-info-end">
-            <text class="p-index__restaurant-list-item-attr">2.8km</text>
-            <text class="p-index__restaurant-list-item-sub-attr">12min</text>
+            <text class="p-index__restaurant-list-item-attr">{{restaurant.distance}}km</text>
+            <text class="p-index__restaurant-list-item-sub-attr">{{restaurant.traffic}}min</text>
           </view>
         </view>
         <view class="p-index__restaurant-list-item-info">
           <view class="p-index__restaurant-list-item-info-start">
-            <text class="p-index__restaurant-list-item-attr">Burnaby</text>
+            <text class="p-index__restaurant-list-item-attr">{{restaurant.area}}</text>
             </view>
           <view class="p-index__restaurant-list-item-info-end">
-            <text class="p-index__restaurant-list-item-attr">11am - 10pm</text>
+            <text class="p-index__restaurant-list-item-attr">{{restaurant.startHour}}am - {{restaurant.closeHour}}pm</text>
           </view>
         </view>
       </view>
     </view>
-    <view class="p-index__restaurant-list-item">
-      <view class="p-index__restaurant-list-item-logo">
-        <image style="width: 150rpx; height: 150rpx; background-color: #f63;" mode="aspectFill" src="../../assets/images/mcdonald.jpg"></image>
-      </view>
-      <view class="p-index__restaurant-list-item-content">
-        <view class="p-index__restaurant-list-item-title">
-          麦当劳
-        </view>
-        <view class="p-index__restaurant-list-item-stars">
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star"></view>
-          <view class="fa icon-star-half-alt"></view>
-        </view>
-        <view class="p-index__restaurant-list-item-info">
-          <view class="p-index__restaurant-list-item-info-start">
-            <text class="p-index__restaurant-list-item-attr">快餐</text>
-            <text class="p-index__restaurant-list-item-sub-attr">人均 $10</text>
-          </view>
-          <view class="p-index__restaurant-list-item-info-end">
-            <text class="p-index__restaurant-list-item-attr">2.8km</text>
-            <text class="p-index__restaurant-list-item-sub-attr">12min</text>
-          </view>
-        </view>
-        <view class="p-index__restaurant-list-item-info">
-          <view class="p-index__restaurant-list-item-info-start">
-            <text class="p-index__restaurant-list-item-attr">Burnaby</text>
-            </view>
-          <view class="p-index__restaurant-list-item-info-end">
-            <text class="p-index__restaurant-list-item-attr">11am - 10pm</text>
-          </view>
-        </view>
-      </view>
-    </view>
+
+
+
   </view>
-  
 </view>

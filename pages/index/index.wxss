@@ -64,6 +64,7 @@
   justify-content: center;
   font-size: 1.40rem;
   font-weight: bold;
+  color: #f63;
 }
 
 .p-index__restaurant-list-title::before, .p-index__restaurant-list-title::after {
@@ -92,6 +93,10 @@
 .p-index__restaurant-list-item {
   padding: 30rpx;
   display: flex;
+}
+
+.p-index__restaurant-list-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
 }
 
 .p-index__restaurant-list-item-logo {

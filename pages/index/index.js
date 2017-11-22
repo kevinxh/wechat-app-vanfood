@@ -1,28 +1,43 @@
 const app = getApp()
 
+const samples = [{
+  name: "Gyu-kaku 牛角",
+  img: "https://pic.pimg.tw/loveeatmiss520/1409150470-3153101501_n.jpg?v=1409150782",
+  rating: 5,
+  cuisine: "日餐",
+  avgPrice: 40,
+  distance: 10.6,
+  traffic: 38,
+  area: "Vancouver",
+  startHour: "11",
+  closeHour: "10"
+}, {
+  name: "麦当劳",
+  img: "https://typeset-beta.imgix.net/uploads/image/2017/6/16/0c06c140-a2eb-41d1-9a19-e63fb069ab2b-signature-line.jpg",
+  rating: 3,
+  cuisine: "快餐",
+  avgPrice: 10,
+  distance: 2.8,
+  traffic: 12,
+  area: "Burnaby",
+  startHour: "11",
+  closeHour: "10"
+}, {
+  name: "品一品",
+  img: "https://tva4.sinaimg.cn/crop.0.0.640.640.180/d1b9badcjw8eqnycmhpqcj20hs0hs3z7.jpg",
+  rating: 4,
+  cuisine: "香锅",
+  avgPrice: 20,
+  distance: 7.8,
+  traffic: 26,
+  area: "Burnaby",
+  startHour: "11",
+  closeHour: "10"
+}]
+
 Page({
   data: {
-    favourite:[{
-      name: "麦当劳",
-      rating: 4,
-      cuisine: "快餐",
-      avgPrice: 10,
-      distance: 2.8,
-      traffic: 12,
-      area: "Burnaby",
-      startHour: "11",
-      closeHour: "10"
-    }, {
-      name: "麦当劳",
-      rating: 3,
-      cuisine: "快餐",
-      avgPrice: 10,
-      distance: 2.8,
-      traffic: 12,
-      area: "Burnaby",
-      startHour: "11",
-      closeHour: "10"
-    }],
+    favourite: samples,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
