@@ -1,3 +1,5 @@
+# This project is deprecated!
+
 # 🍕🍗🍤🍟🥙🌮🌯🍝WeChat app: Vanfood🍔🍲🍱🍣🍛🍰🍩🍹
 <img src="/assets/demo.jpeg" width="300" align="right">
 WeChat app that shows restaurant deals, favourites and the best places to eat in Vancouver.
